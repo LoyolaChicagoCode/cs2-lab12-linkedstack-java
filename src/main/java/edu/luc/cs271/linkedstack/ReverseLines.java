@@ -9,9 +9,9 @@ public class ReverseLines {
 
 
 
-    final Scanner input = new Scanner(System.in);
+    final var input = new Scanner(System.in);
     while (input.hasNextLine()) {
-      final String line = input.nextLine();
+      final var line = input.nextLine();
 
 
 

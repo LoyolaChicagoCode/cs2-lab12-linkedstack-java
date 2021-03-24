@@ -43,7 +43,7 @@ public class TestLinkedStack {
 
   @Test
   public void testAfterPush() {
-    final String value = "hello";
+    final var value = "hello";
     fixture.push(value);
     assertFalse(fixture.isEmpty());
     assertEquals(value, fixture.peek());
@@ -51,7 +51,7 @@ public class TestLinkedStack {
 
   @Test
   public void testPushThenPop() {
-    final String value = "hello";
+    final var value = "hello";
     fixture.push(value);
     assertEquals(value, fixture.pop());
     assertTrue(fixture.isEmpty());
@@ -59,8 +59,8 @@ public class TestLinkedStack {
 
   @Test
   public void testPush2ThenPop2() {
-    final String value1 = "hello";
-    final String value2 = "world";
+    final var value1 = "hello";
+    final var value2 = "world";
     fixture.push(value1);
     fixture.push(value2);
     assertEquals(value2, fixture.pop());
@@ -75,8 +75,8 @@ public class TestLinkedStack {
 
   @Test
   public void testAsListNonempty() {
-    final String value1 = "hello";
-    final String value2 = "world";
+    final var value1 = "hello";
+    final var value2 = "world";
     fixture.push(value1);
     fixture.push(value2);
     final List<String> list = fixture.asList();
